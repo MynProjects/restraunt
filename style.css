@@ -1,0 +1,413 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap");
+
+:root {
+  --main-yellow: #fec260;
+  --main-color: #e45964;
+  --hover-color: #ec9ba2;
+  --bg-color: #195a66;
+  --nav-text: rgb(250, 248, 248);
+  --ash-text: rgb(128, 126, 126);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--bg-color);
+  font-family: "Roboto Mono", monospace;
+  background-color: var(--nav-text);
+}
+
+header {
+  margin: 15px 0px;
+}
+
+.nav-link,
+.navbar-brand,
+.custom-toggler {
+  color: var(--bg-color);
+}
+
+.nav-link {
+  text-align: center;
+
+  width: 115px;
+}
+
+.nav-link_sub {
+  text-align: center;
+  width: 220px;
+}
+
+.border_button {
+  
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgb(126, 196, 13);
+  margin-right: 10px;
+}
+.border_button:hover{
+  background-color: var(--bg-color);
+ 
+
+}
+.order_button{
+  
+  border-radius: 5px 5px 5px 5px;
+  background-color: var(--main-yellow);
+
+}
+.order_button:hover{
+  background-color: var(--bg-color);
+  color: var(--bg-color);
+  border: 0px solid;
+
+}
+.nav-link:hover,
+.navbar-brand:hover {
+  color: var(--main-color);
+}
+
+.nav-link:active {
+  color: var(--main-yellow);
+}
+
+.dropdown-menu {
+  background-color: var(--main-color);
+}
+
+.banner {
+  border-radius: 5px 30px 5px 30px;
+  width: 100%;
+  height: 70vh;
+}
+
+.bannerbtn {
+  position: relative;
+}
+
+.online_order {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.home_button {
+  background-color: var(--main-color);
+
+  color: var(--nav-text);
+  border-radius: 8px;
+  width: 280px;
+  height: 60px;
+  position: relative;
+  font-size: 1.3em;
+}
+
+.home_button:hover {
+  background-color: var(--hover-color);
+  color: var(--bg-color);
+}
+
+.about_button {
+  width: 280px;
+  height: 60px;
+  background-color: var(--main-color);
+
+  color: var(--nav-text);
+
+  border-radius: 8px;
+}
+
+.submit_button {
+  height: 60px;
+  background-color: var(--bg-color);
+
+  color: var(--nav-text);
+  border-radius: 8px;
+}
+
+.submit_button:hover {
+  background-color: var(--hover-color);
+}
+
+.about_left_opening {
+  position: relative;
+}
+
+.about_left_opening::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: var(--main-color);
+  height: 200px;
+  top: 0;
+  right: 60px;
+}
+
+.section_content {
+  text-align: justify;
+}
+
+.center_element {
+  display: flex;
+  justify-content: center;
+}
+
+.margin_top_bottom {
+  margin: 50px 0px;
+  font-weight: bold;
+}
+
+.mariginh3 {
+  margin: 60px 0px;
+}
+
+.mariginh4 {
+  margin: 40px 0px;
+}
+
+.orderbanner {
+  background-color: var(--main-yellow);
+  border-radius: 8px;
+}
+
+.table1 {
+  border: 1px solid var(--bg-color);
+}
+
+.booking_left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+
+.banner2img {
+  filter: blur(15px);
+}
+
+.banner2 {
+  position: relative;
+}
+
+.banner2_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 80px;
+  color: #000000;
+  font-size: 1.4rem;
+}
+
+.addcart {
+
+  /* border: 1px solid var(--bg-color); */
+  padding: 10px;
+  text-decoration: none;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 50px 0px 0px 50px;
+
+}
+
+.card {
+  margin: 10px;
+  padding: 0px;
+
+
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-body1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+
+
+
+
+}
+
+.menusection {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.flex_center {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.menu_button {
+
+  width: 200px;
+
+
+
+}
+
+.heading4 {
+  color: var(--bg-color);
+  font-weight: bold;
+  position: relative;
+
+}
+
+.heading4::before {
+  content: "";
+  position: absolute;
+
+  top: 40px;
+  left: 0px;
+  width: 200px;
+  height: 10px;
+  background-color: var(--main-yellow);
+}
+
+.main_headding_menu {
+  background-color: #ffffff
+}
+
+
+.append_menu {
+
+  font-size: 30px;
+  color: rgb(21, 190, 106);
+  cursor: pointer;
+
+
+
+
+}
+
+.append_menu_red {
+  font-size: 30px;
+  color: rgb(219, 51, 59);
+  cursor: pointer;
+
+
+}
+
+.append_menu_red:hover {
+
+  color: rgb(252, 61, 70);
+  cursor: pointer;
+
+
+}
+
+.append_menu:hover {
+  color: rgb(28, 231, 130);
+
+}
+
+.addbutton {
+  margin-top: 0px;
+}
+
+.menuform {
+  align-items: center;
+
+
+}
+
+.invalid {
+  display: none;
+  font-size: 12px;
+  color: red;
+  font-style: italic;
+
+
+
+
+
+
+}
+
+.map {
+  width :600px;
+  height:380px;
+}
+
+.form_submited_text{
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .nav-link {
+    text-align: center;
+
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .navbar-brand {
+    font-size: 15px;
+  }
+
+  header {
+    margin: 10px 0px;
+  }
+
+  .border_button {
+    border: 1px solid var(--bg-color);
+    border-radius: 5px 30px 5px 30px;
+  }
+
+  .menusection {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+
+
+
+
+  }
+
+  .append_menu_red {
+    font-size: 30px;
+    color: rgb(219, 51, 59);
+    cursor: pointer;
+    margin-left: 10px;
+
+  }
+
+  .about_left_opening::after {
+
+    height: 0px;
+
+  }
+
+  .mariginh3 {
+    margin: 20px 0px;
+  }
+
+  .orderbanner {
+    display: none;
+
+  }
+
+  .map {
+    width :400px;
+    height:390px;
+  }
+}

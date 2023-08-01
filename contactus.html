@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=ha, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/9f5916fe4a.js" crossorigin="anonymous"></script>
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Garden Indian Restaurant</title>
+    <!-- jquery CSS -->
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.theme.css" />
+</head>
+
+<body>
+    <!--  Header  -->
+    <header>
+        <nav class="container navbar navbar-expand-lg justify-content-between">
+            <article class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/images/wooden-spoon.png" alt="" width="45" height="45" />
+                    Garden Indian Restaurant</a>
+                <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    id="toggler-na" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    onclick="toggleMenu()">
+                    <b class="bi bi-list burger"></b>
+                    <!-- <b class='bi bi-x     cross'></b>  -->
+                </a>
+            </article>
+
+            <article class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./menu.html" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link_sub" href="./lunchmenu.html">Lunch Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link_sub" href="./dinnermenu.html">Dinner Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link_sub " href="./takeway.html">Take Away Menu</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border_button" href="./booking.html">Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link order_button" href="./onlineorder.html">Order Now</a>
+                    </li>
+                    
+                </ul>
+            </article>
+        </nav>
+    </header>
+    <!--//  Header  -->
+    <main class="container">
+        <!-- info section -->
+        <!-- <article class="text-center">
+            <h1 class="margin_top_bottom ">Contact Us</h1>
+        </article> -->
+        <section class="mariginh3">
+            <article class="col ">
+
+
+            </article>
+
+            <!-- //opening hrs -->
+            <section>
+                <article class="row  justify-content-lg-center align-items-center">
+
+                    <article class="col-12 col-md-6  mariginh3">
+                        <form method="POST" action="https://tau.usq.edu.au/courses/CSC8740/reflect.php">
+                            <div class="mb-3">
+                    
+                                <label for="exampleFormControlInput1" class="form-label">Contact Name</label>
+                                <input type="name" class="form-control" id="exampleInput1"
+                                    placeholder="mike">
+                                    <div class="invalid " id="invalid_content_1">
+                                        Please Enter Contact Name
+                                    </div><br />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInput2"
+                                    placeholder="name@example.com">
+                                    <div class="invalid " id="invalid_content_2">
+                                        Please Enter Email address
+                                    </div><br />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                                <input type="number"  class="form-control"
+                                    id="exampleInput3" placeholder="040******7">
+                                    <div class="invalid " id="invalid_content_3">
+                                        Please Enter date
+                                    </div><br />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="exampleInput4"
+                                    placeholder="problem with payment">
+                                    <div class="invalid " id="invalid_content_4">
+                                        Please Enter Subject
+                                    </div><br />
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label"> About the topic</label>
+                                <textarea type="text" class="form-control" id="exampleInput5" placeholder="description" ></textarea>
+                                <div class="invalid " id="invalid_content_5"  >
+                                    please describe About the topic
+                                </div><br />
+                            </div>
+
+                            <div>
+                                <h3 class="form_submited_text">form submitted</h3>
+    
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" name="" id="btn_page_submit2" class="submit_button">Submit</button>
+                              </div>
+
+                        </form>
+
+
+                    </article>
+
+                    <article class="col-6 col-md-6">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7068.967001569816!2d145.08025922367875!3d-37.88679511781391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66a663de69c5b%3A0x239b3e5c16b6c43d!2s1341%20Dandenong%20Rd%2C%20Chadstone%20VIC%203148!5e0!3m2!1sen!2sau!4v1665397628041!5m2!1sen!2sau"
+                            class="map" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </article>
+
+                </article>
+                <article class="row justify-content-lg-center align-items-center">
+
+                    <article class="col-12 col-md-5  about_left_opening mariginh3">
+
+                        <h2 class="text-center mariginh3">Address</h2>
+                    </article>
+
+                    <article class="col-12 col-md-5">
+                        <p class="text-start">
+                            Chadstone Shopping Centre<br>
+                            1341 Dandenong Rd., Malvern East Vic., 3148<br>
+                            Phone: (03) 9568 1486<br>
+                            eMail: <kbd>thegarden@c-link.com.au</kbd>
+                        </p>
+                        
+
+
+                    </article>
+
+                </article>
+                <article class="text-end orderbanner mariginh3">
+                    <b class="mariginh3">It is our commitment to use fresh ingredients. We do not use any preservatives
+                        or food
+                        <button class="about_button ">Check Menu</button>
+                </article>
+
+
+
+            </section>
+        </section>
+    </main>
+
+
+    <footer class="text-center">
+
+        <article class="row">
+
+
+
+
+        </article>
+
+
+        <br>
+        <p>&copy; Copyright 2022. All Rights Reserved.</p>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <!--  js -->
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

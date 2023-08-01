@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=ha, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/9f5916fe4a.js" crossorigin="anonymous"></script>
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Garden Indian Restaurant</title>
+    <!-- jquery CSS -->
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.theme.css" />
+</head>
+
+<body>
+    <!--  Header  -->
+    <header>
+        <nav class="container navbar navbar-expand-lg justify-content-between">
+            <article class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/images/wooden-spoon.png" alt="" width="45"
+                        height="45" />
+                    Garden Indian Restaurant</a>
+                <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    id="toggler-na" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    onclick="toggleMenu()">
+                    <b class="bi bi-list burger"></b>
+                    <!-- <b class='bi bi-x     cross'></b>  -->
+                </a>
+            </article>
+
+            <article class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border_button" href="./booking.html">Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link order_button" href="./onlineorder.html">Order Now</a>
+                    </li>
+
+                </ul>
+            </article>
+        </nav>
+    </header>
+    <!--//  Header  -->
+    <main class="container">
+        <section>
+            <section class="row ">
+
+                <article class="col-11 col-md-6 text-left ">
+                    <div class="booking_left">
+                        <h4 class="mariginh4">booking info</h4>
+                        <p>The Garden is available for table bookings for Lunch or Dinner.</p>
+                        <p>Please ring for table bookings on (03) 9568 1486</p>
+                        <p>The Garden is licensed, but patrons can bring wine only.</p>
+                        <dl>
+                            <dt>Conference or Group Bookings</dt>
+                            <dd>The Garden caters for group bookings of upto 30 people.</dd>
+                            <dd>For large group bookings please send email to <kbd>thegarden@c-link.com.au</kbd></dd>
+                            <dd>Your email must contain the following information:</dd>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="col-11 col-md-6">
+                    <h4 class="mariginh4">booking form</h4>
+
+                    <form class="col-12" method="POST" action="https://tau.usq.edu.au/courses/CSC8740/reflect.php">
+                        <div class="mb-3">
+
+                            <label for="exampleFormControlInput1" class="form-label">Contact Name</label>
+                            <input type="name" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                            <div class="invalid " id="invalid_1">
+                                Please Enter Name
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">Phone Number</label>
+                            <input type="number" min="10" max="10" class="form-control" id="exampleFormControlInput2"
+                                placeholder="040****9*7">
+                            <div class="invalid " id="invalid_2">
+                                Please Enter Phone Number
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput3"
+                                placeholder="name@example.com">
+
+                            <div class="invalid " id="invalid_3">
+                                Please Enter Email address
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput4" class="form-label">The number of people</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput4" placeholder="4">
+                            <div class="invalid " id="invalid_4">
+                                Please Enter number of people
+                            </div>
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput4" class="form-labe5">Whether the event will require
+                                bar service</label>
+                            <select class="form-control" id="exampleFormControlInput5">
+                                <option>Choose...</option>
+                                <option>Yes</option>
+                                <option>No</option>
+
+
+
+                            </select>
+                            <div class="invalid " id="invalid_5">
+                                Please select option
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput6" class="form-label">Date</label>
+                            <input type="date" min="today" class="form-control" id="exampleFormControlInput6"
+                                placeholder="name@example.com">
+                            <div class="invalid " id="invalid_6">
+                                Please Enter date
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput7" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="exampleFormControlInput7"
+                                placeholder="name@example.com">
+                            <div class="invalid " id="invalid_7">
+                                Please Enter date
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">If possible, 3 dates that would
+                                be acceptable</label><br />
+                            <input type="date" min="today" class="form-control" id="exampleFormControlInput8"
+                                placeholder="name@example.com">
+                            <div class="invalid " id="invalid_8">
+                                Please Enter date
+                            </div><br />
+                            <input type="date" min="today" class="form-control" id="exampleFormControlInput9"
+                                placeholder="name@example.com">
+                            <div class="invalid " id="invalid_9">
+                                Please Enter date
+                            </div><br />
+                            <input type="date" min="today" class="form-control" id="exampleFormControlInput10"
+                                placeholder="name@example.com">
+
+                            <div class="invalid " id="invalid_10">
+                                Please Enter date
+                            </div><br />
+
+                        </div>
+                        <div>
+                            <h3 class="form_submited_text">form submitted</h3>
+
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" name="" id="btn_page_submit" class="submit_button">Submit</button>
+                        </div>
+
+                    </form>
+
+
+
+
+
+                </article>
+            </section>
+
+
+            </article>
+            <article class="text-end orderbanner mariginh3">
+                <b class="mariginh3">It is our commitment to use fresh ingredients. We do not use any preservatives
+                    or food
+                    <button class="about_button ">Check Menu</button>
+            </article>
+
+
+
+
+        </section>
+    </main>
+
+
+    <footer class="text-center">
+
+        <article class="row">
+
+
+
+
+        </article>
+
+
+        <br>
+        <p>&copy; Copyright 2022. All Rights Reserved.</p>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <!--  js -->
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+</body>
+
+</html>

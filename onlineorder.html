@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=ha, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/9f5916fe4a.js" crossorigin="anonymous"></script>
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Garden Indian Restaurant</title>
+    <!-- jquery CSS -->
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="./assets/jquerycss/jquery-ui.theme.css" />
+</head>
+
+<body>
+    <!--  Header  -->
+    <header>
+        <nav class="container navbar navbar-expand-lg justify-content-between">
+            <article class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./assets/images/wooden-spoon.png" alt="" width="45"
+                        height="45" />
+                    Garden Indian Restaurant</a>
+                <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    id="toggler-na" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+                    onclick="toggleMenu()">
+                    <b class="bi bi-list burger"></b>
+                    <!-- <b class='bi bi-x     cross'></b>  -->
+                </a>
+            </article>
+
+            <article class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border_button" href="./booking.html">Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link order_button" href="./onlineorder.html">Order Now</a>
+                    </li>
+
+                </ul>
+            </article>
+        </nav>
+    </header>
+    <!--//  Header  -->
+    <main class="container">
+        <!-- info section -->
+        <!-- <article class="text-center">
+            <h1 class="margin_top_bottom ">Bookings</h1>
+        </article> -->
+        <section>
+            <section class=" row justify-content-md-center justify-content-sm-center">
+                <article class="col-12 col-md-6">
+                    <h4 class="mariginh4">Order now</h4>
+                    <form class="col-12" name="myForm" method="POST" action="https://tau.usq.edu.au/courses/CSC8740/reflect.php">
+                        <div class="col mb-3">
+                            <label for="validationCustom01" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="validationCustom01" name="validationCustom01" placeholder="mike">
+                            <div class="invalid " id="invalid1">
+                                Please select Name
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="validationCustom02" class="form-label">Phone Number</label>
+                            <input type="number" min="" max="9999999999" class="form-control" id="validationCustom02" name="validationCustom02"
+                                placeholder="040*****7">
+                            <div class="invalid " id="invalid2">
+                                Please select Phone Number
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="validationCustom03" class="form-label">Date</label>
+                            <input type="date" min="today" class="form-control" id="validationCustom03" name="validationCustom03"
+                                placeholder="name@example.com">
+                            <div class="invalid " id="invalid3">
+                                Please select Date.
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="validationCustom04" class="form-label">Time</label>
+                            <input type="time" class="form-control" id="validationCustom04" name="validationCustom04">
+                            <div class="invalid " id="invalid4">
+                                Please select a valid Time.
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+
+                            <label for="validationCustom05" class="form-label">Menu</label>
+
+                            <select class="form-select" aria-label="Floating label select example"
+                                id="validationCustom05" name="validationCustom05"  >
+
+                                <option value="0"selected>Choose..</option>
+                                <option value="1">Vegetable Samosa</option>
+                                <option value="2">Onion Bhaji</option>
+                                <option value="3">Hara Bhara Kebab</option>
+                                <option value="4">Chicken Tikka</option>
+                                <option value="5">Seekh Kebab</option>
+                                <option value="6">Chicken Tikka Masala (medium)</option>
+                                <option value="7">Chicken Balti (medium)</option>
+                                <option value="8">Chicken Korma (mild)</option>
+                                <option value="9">Kadai Chicken (medium)</option>
+                                <option value="10">Chicken Vindaloo (HOT)</option>
+                                <option value="11">Mysore Chicken (HOT)</option>
+                                <option value="12">Lamb Rogan Josh (medium)</option>
+                                <option value="13">Lamb Korma (mild)</option>
+                                <option value="14">Lamb Madras (medium)</option>
+                                <option value="15">Saag Lamb (mild to medium)</option>
+                                <option value="16">Lamb Masala (medium)</option>
+                                <option value="17">Lamb Vindaloo (HOT)</option>
+                                <option value="18">Beef Rogan Josh (medium)</option>
+                                <option value="19">Beef Masala (medium)</option>
+                                <option value="20">Beef Korma (mild)</option>
+                                <option value="21">Beef Madras (mild to medium)</option>
+                                <option value="22">Beef Vindaloo (HOT)</option>
+                                <option value="23">Beef Pepper Fry (HOT)</option>
+                                <option value="24">Butter Paneer (mild)</option>
+                                <option value="25">Paneer Tikka Masala (medium)</option>
+                                <option value="26">Paneer Bhurji (medium)</option>
+                                <option value="27">Palak Paneer (mild to medium)</option>
+                                <option value="28">Achari Paneer (medium)</option>
+                                <option value="29">Vegetable Korma (mild)</option>
+                                <option value="30">Mix vegetable (medium)</option>
+                                <option value="31">Chole Masala/Chole Palak (medium)</option>
+                                <option value="32">Malai Kofta (mild)</option>
+                                <option value="33">Aloo Gobi / Aloo Mutter (medium)</option>
+                                <option value="34">Saag Aloo (mild)</option>
+                                <option value="35">Dal Tadka (mild to medium)</option>
+                                <option value="36">Dal Makhani (medium)</option>
+                                <option value="37">Plain Naan</option>
+                                <option value="38">Garlic Naan</option>
+                                <option value="39">Cheese Naan</option>
+                                <option value="40">Cheese & Garlic Naan</option>
+                                <option value="41">Peshawari Naan</option>
+                                <option value="42">Aloo Naan</option>
+                                <option value="43">Kheema Naan / Paneer Naan</option>
+                                <option value="44">Chilli Naan</option>
+                                <option value="45">Spinach Naan</option>
+                                <option value="46">Cheese & Chilli Naan</option>
+                                <option value="47">Cheese & Spinach Naan</option>
+                                <option value="48">Roti</option>
+                                <option value="49">Steamed Rice</option>
+                                <option value="50">Saffron Rice</option>
+                                <option value="51">Coconut Rice</option>
+                                <option value="52">Jeera Peas Rice</option>
+                                <option value="53">Biryani Rice</option>
+                                <option value="54">Papadams</option>
+                                <option value="55">Cucumber Raita</option>
+                                <option value="53">Sweet Mango Chutney</option>
+                                <option value="57">Mint Sauce</option>
+                                <option value="58">Pickles</option>
+                            </select>
+
+                            <div class="invalid " id="invalid5">
+                                Please select a order.
+                            </div>
+                        </div>
+                        <article class="d-grid gap-2 " style="margin-top:60px;">
+                            <button type="button" class="btn submit_button" id="submit_btn">Submit Order</button>
+                        </article>
+                        
+
+
+
+                </article>
+
+
+
+             
+            </section>
+
+
+            </article>
+            <article class="text-end orderbanner mariginh3">
+                <b class="mariginh3">It is our commitment to use fresh ingredients. We do not use any preservatives
+                    or food
+                    <button class="about_button ">Check Menu</button>
+            </article>
+
+
+
+
+        </section>
+    </main>
+
+
+    <footer class="text-center">
+
+        <article class="row">
+
+
+
+
+        </article>
+
+
+        <br>
+        <p>&copy; Copyright 2022. All Rights Reserved.</p>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <!--  js -->
+    <script src="onlineorder.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
